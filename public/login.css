@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("Image/muck.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.login-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Mudança para posicionar o texto "Hub Login" acima do form */
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+form {
+  width: 300px;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+}
+
+.input-container i {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #333;
+}
+
+input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #354c5f; /* Cor do botão */
+  color: #fff; /* Cor do texto */
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+  transition: transform 0.2s, box-shadow 0.2s; /* Adiciona transição para o efeito de aproximação */
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.9); /* Aumenta a sombra ao passar o mouse */
+  transform: translateY(-1px); /* Efeito de aproximação ao passar o mouse */
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Restante do CSS */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold; /* Adicionando negrito */
+}
+.error + .input-container input {
+  border-color: red;
+}

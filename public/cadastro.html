@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="Icons/IconTitulo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HubMuck Cadastro</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Cadastro de Usuário</h1>
+      <form id="cadastro-form">
+        <div class="input-container">
+          <i class="fas fa-user"></i>
+          <input type="text" id="email" placeholder="Email" />
+        </div>
+        <p id="email-error" class="error"></p>
+        <div class="input-container">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" placeholder="Senha" />
+        </div>
+        <p id="password-error" class="error"></p>
+        <button type="submit">Cadastrar</button>
+        <button id="login-link" type="button">
+          Já cadastrado? Faça o login
+        </button>
+      </form>
+    </div>
+    <script src="/cadastro.js"></script>
+  </body>
+</html>

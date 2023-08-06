@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("Image/muck.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
+  height: 100vh;
+}
+
+.my-button,
+.button-description {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e2dede;
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.my-button {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.my-button:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2),
+    0px 8px 16px rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px) scale(1.05);
+}
+
+.click-effect:hover {
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5),
+    0px 4px 8px rgba(0, 0, 0, 0.9);
+  font-family: "Poppins", sans-serif;
+  transform: scale(1.1);
+}
+
+/*cor dos ícones nos botões*/
+.white-image {
+  filter: brightness(0) invert(1);
+}
+
+.my-button.highlight {
+  filter: brightness(110%);
+}
+
+/* Linha dos botões */
+.button-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para botão azul e laranja */
+.my-button.blue,
+.my-button.orange {
+  background-color: #354c5f;
+  color: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #e2dede;
+}
+
+/* Estilos para os wrappers dos botões */
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
